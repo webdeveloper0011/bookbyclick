@@ -1435,7 +1435,7 @@ ul {
 }
 
 .custom-flight-details-modal .layover-capsule-sec {
-    padding: 1rem 0 1rem 2.75rem;
+       padding: 20px 0 20px 0px;
 }
 
 .custom-flight-details-modal .layover-capsule {
@@ -1886,6 +1886,22 @@ ul {
     .city-panel {right: 0;left: auto;}
     .passenger-panel {left: auto;right:0;}
     .city-panel.arrival-pannel {left: 0;}
+    .flight-card-divider{margin: 0 -15px;}
+    .custom-fare-modal .modal-buttons-sec p {
+    position: relative;
+}
+
+.custom-fare-modal .modal-buttons-sec {
+    flex-direction: column;
+    gap: 15px;
+}
+.custom-flight-details-modal .flight-station-name {
+    font-size: 14px;
+}
+.custom-flight-details-modal .flight-segment-details {
+    padding: 15px 10px 15px 44px;}
+.custom-flight-details-modal .baggage-info-strip {margin: 15px 0;}
+.custom-flight-details-modal .flight-segment-details:before {top:-40px;height: 130px;}
 }
 
 @media screen and (max-width: 991px) and (min-width: 768px) {
@@ -1901,6 +1917,9 @@ ul {
     .route-time{font-size:16px;line-height:16px;}
     .flight-card-divider{margin:0 -15px;}
     .flight-price{font-size:16px;}
+    .custom-fare-modal .modal-dialog {
+    max-width: 770px;
+}
 }
 
 @media screen and (max-width: 1200px) and (min-width: 992px) {
