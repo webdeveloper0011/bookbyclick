@@ -1916,6 +1916,10 @@ ul {
     padding: 15px 10px 15px 44px;}
 .custom-flight-details-modal .baggage-info-strip {margin: 15px 0;}
 .custom-flight-details-modal .flight-segment-details:before {top:-40px;height: 130px;}
+.filters-options .selection-btn .custom-dropdown i {
+    font-size: 9px;
+    margin-bottom: -2px;
+}
 }
 
 @media screen and (max-width: 991px) and (min-width: 768px) {
