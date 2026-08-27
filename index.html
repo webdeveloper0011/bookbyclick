@@ -1,0 +1,1469 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BookbyClick</title>
+  <link rel="shortcut icon" href="images/logo.svg" type="image/x-icon">
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
+  <link href="css/fontawesome-7.min.css" rel="stylesheet" />
+  <link href="css/materialdesignicons.min.css" rel="stylesheet" />
+  <link href="css/remixicon.css" rel="stylesheet" />
+  <link href="css/owl.carousel.min.css" rel="stylesheet" />
+  <link href="css/owl.theme.default.css" rel="stylesheet">
+  <link href="css/animate.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet" />
+
+</head>
+
+<body>
+  <!-- Header Area Start  -->
+  <div class="logo-sec-wrapper">
+    <div class="container">
+      <div class="row">
+        <!-- Logo Section -->
+        <div class="col-12 col-sm-12 col-md-6 col-lg-4 logo-sec">
+          <a class="logo-align observe-element left-in" href="index.html">
+            <img src="images/logo.svg" alt="Logo Image">
+          </a>
+        </div>
+        <!-- Inquiries Contact -->
+        <div class="col-12 col-sm-12 col-md-6 col-lg-8 logo-wrapper-ryt">
+          <div class="inquery-section logo-align observe-element right-in">
+            <div class="img-sec">
+              <img src="images/user-img.png" alt="User Image">
+            </div>
+            <div class="inquery-txt">
+              <p>For Further Inquires </p>
+              <a href="tel:+91-124-407-0221">+91-124-407-0221</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Header Area Start  -->
+
+  <!-- Navigation / Search Details Start -->
+  <div class="top-search-wrapper">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+          <div class="top-search-inner summary" id="topSearchWrap">
+            <!-- SUMMARY BAR -->
+            <div class="summary-bar" id="summaryBar">
+              <div class="route">
+                <div class="departure-city">
+                  <div class="city">DEL</div>
+                  <div class="subcity">Delhi</div>
+                </div>
+                <div class="plane-path">
+                  <img src="images/flight-route-conector.svg" alt="">
+                </div>
+                <div class="arrival-city">
+                  <div class="city">BOM</div>
+                  <div class="subcity">Mumbai</div>
+                </div>
+              </div>
+
+              <div class="divider"></div>
+
+              <div class="route-info">
+                <div class="info-block">
+                  <div class="info-label">Depart</div>
+                  <div class="info-value">24-07-2025</div>
+                </div>
+
+                <div class="info-block">
+                  <div class="info-label">Return</div>
+                  <div class="info-value">31-07-2025</div>
+                </div>
+              </div>
+
+
+              <div class="divider"></div>
+
+              <div class="passenger-info">
+                <div class="info-block">
+                  <div class="info-label">Passenger &amp; Class</div>
+                  <div class="info-value">
+                    <i class="fa-solid fa-user"></i> <span class="adult-count">1</span> Adult •
+                    <span class="clas-name"> Economy</span>
+                  </div>
+                </div>
+              </div>
+
+
+              <button class="comn-btn animated-btn yellow-border-btn modifyBtn" id="modifyBtn">
+                <i class="fa-solid fa-plane-up"></i>
+                MODIFY FLIGHT
+                <span class="animatn"></span>
+              </button>
+
+              <!-- Bookings Tracker -->
+              <button class="comn-btn animated-btn bookings-tracker-btn  observe-element right-in">
+                <div class="cart-icon-wrapper">
+                  <i class="ri-luggage-cart-fill"></i>
+                </div>
+                <div class="tracker-text">
+                  <span class="tracker-title">MY BOOKINGS</span>
+                  <span class="tracker-status" id="bookingStatus">No Flight Selected</span>
+                </div>
+                <span class="animatn"></span>
+              </button>
+
+            </div>
+
+            <!-- SEARCH FORM -->
+            <div class="search-bar" id="searchBar">
+
+              <!-- Trip Type -->
+              <div class="field field-dropdown field-no-icon" id="fieldTripType">
+                <div class="field-label">Trip type</div>
+                <div class="field-value">Round trip <i class="fa-solid fa-chevron-down"></i></div>
+
+                <div class="field-panel">
+                  <label class="custom-radio-option">
+                    <input type="radio" name="tripType" value="OneWay" class="fare-radio-input">
+                    <div class="custom-radio-circle"></div>
+                    One Way
+                  </label>
+                  <label class="custom-radio-option">
+                    <input type="radio" name="tripType" value="RoundTrip" class="fare-radio-input" checked>
+                    <div class="custom-radio-circle"></div>
+                    Round Trip
+                  </label>
+                  <label class="custom-radio-option">
+                    <input type="radio" name="tripType" value="MultiCity" class="fare-radio-input">
+                    <div class="custom-radio-circle"></div>
+                    Multi City
+                  </label>
+                </div>
+              </div>
+              <!-- Leaving From -->
+              <div class="field field-dropdown" id="fieldFrom">
+                <div class="icon-round-box">
+                  <i class="fa-solid fa-plane-departure"></i>
+                </div>
+                <div class="txt-sec">
+                  <div class="field-label">Leaving from</div>
+                  <div class="field-value">DEL - New Delhi </div>
+                </div>
+
+                <div class="field-panel city-panel">
+                  <input type="text" class="city-search-input" placeholder="Search city or airport">
+                  <ul class="city-option-list list-unstyled">
+                    <li class="city-option active">
+                      <span class="city-code">DEL</span>
+                      <div class="city-option-info">
+                        <span class="city-option-name">New Delhi</span>
+                        <span class="city-option-sub">Indira Gandhi Intl Airport</span>
+                      </div>
+                    </li>
+                    <li class="city-option">
+                      <span class="city-code">BOM</span>
+                      <div class="city-option-info">
+                        <span class="city-option-name">Mumbai</span>
+                        <span class="city-option-sub">Chhatrapati Shivaji Airport</span>
+                      </div>
+                    </li>
+                    <li class="city-option">
+                      <span class="city-code">BLR</span>
+                      <div class="city-option-info">
+                        <span class="city-option-name">Bengaluru</span>
+                        <span class="city-option-sub">Kempegowda Intl Airport</span>
+                      </div>
+                    </li>
+                    <li class="city-option">
+                      <span class="city-code">MAA</span>
+                      <div class="city-option-info">
+                        <span class="city-option-name">Chennai</span>
+                        <span class="city-option-sub">Chennai Intl Airport</span>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!-- Going To -->
+              <div class="field field-dropdown" id="fieldTo">
+                <div class="icon-round-box">
+                  <i class="fa-solid fa-plane-arrival"></i>
+                </div>
+                <div class="txt-sec">
+                  <div class="field-label"> Going to</div>
+                  <div class="field-value">BOM - Mumbai</div>
+                </div>
+
+
+                <div class="field-panel city-panel arrival-pannel">
+                  <input type="text" class="city-search-input" placeholder="Search city or airport">
+                  <ul class="city-option-list list-unstyled">
+                    <li class="city-option">
+                      <span class="city-code">DEL</span>
+                      <div class="city-option-info">
+                        <span class="city-option-name">New Delhi</span>
+                        <span class="city-option-sub">Indira Gandhi Intl Airport</span>
+                      </div>
+                    </li>
+                    <li class="city-option active">
+                      <span class="city-code">BOM</span>
+                      <div class="city-option-info">
+                        <span class="city-option-name">Mumbai</span>
+                        <span class="city-option-sub">Chhatrapati Shivaji Airport</span>
+                      </div>
+                    </li>
+                    <li class="city-option">
+                      <span class="city-code">CCU</span>
+                      <div class="city-option-info">
+                        <span class="city-option-name">Kolkata</span>
+                        <span class="city-option-sub">Netaji Subhas Chandra Bose Airport</span>
+                      </div>
+                    </li>
+                    <li class="city-option">
+                      <span class="city-code">HYD</span>
+                      <div class="city-option-info">
+                        <span class="city-option-name">Hyderabad</span>
+                        <span class="city-option-sub">Rajiv Gandhi Intl Airport</span>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!-- Departing (native date input) -->
+              <div class="field field-date">
+                <div class="txt-sec">
+                  <div class="field-label">Departing</div>
+                  <div class="field-value date-value">
+                    <input type="date" class="date-input" id="departDate" value="2025-11-02">
+                  </div>
+                </div>
+                <div class="icon-sec">
+                  <i class="fa-solid fa-calendar-days"></i>
+                </div>
+              </div>
+
+              <!-- Returning (native date input) -->
+              <div class="field field-date" id="fieldReturn">
+                <div class="txt-sec">
+                  <div class="field-label">Returning</div>
+                  <div class="field-value date-value">
+                    <input type="date" class="date-input" id="returnDate" value="2025-11-10">
+                  </div>
+                </div>
+                <div class="icon-sec">
+                  <i class="fa-solid fa-calendar-days"></i>
+                </div>
+
+              </div>
+              <!-- Passenger & Class -->
+              <div class="field field-dropdown field-no-icon" style="min-width:170px;" id="fieldPax">
+                <div class="field-label">Passenger &amp; class</div>
+                <div class="field-value">1 Traveler Eco <i class="fa-solid fa-chevron-down"></i></div>
+
+                <div class="field-panel passenger-panel">
+
+                  <div class="passenger-counter-row">
+                    <div class="passenger-counter-info">
+                      <span class="passenger-counter-title">Adults</span>
+                      <span class="passenger-counter-sub">12+ years</span>
+                    </div>
+                    <div class="passenger-counter-control">
+                      <button type="button" class="passenger-counter-btn" disabled><i
+                          class="fa-solid fa-minus"></i></button>
+                      <span class="passenger-counter-value">1</span>
+                      <button type="button" class="passenger-counter-btn"><i class="fa-solid fa-plus"></i></button>
+                    </div>
+                  </div>
+
+                  <div class="passenger-counter-row">
+                    <div class="passenger-counter-info">
+                      <span class="passenger-counter-title">Children</span>
+                      <span class="passenger-counter-sub">2-12 years</span>
+                    </div>
+                    <div class="passenger-counter-control">
+                      <button type="button" class="passenger-counter-btn" disabled><i
+                          class="fa-solid fa-minus"></i></button>
+                      <span class="passenger-counter-value">0</span>
+                      <button type="button" class="passenger-counter-btn"><i class="fa-solid fa-plus"></i></button>
+                    </div>
+                  </div>
+
+                  <div class="passenger-counter-row">
+                    <div class="passenger-counter-info">
+                      <span class="passenger-counter-title">Infants</span>
+                      <span class="passenger-counter-sub">Below 2 years</span>
+                    </div>
+                    <div class="passenger-counter-control">
+                      <button type="button" class="passenger-counter-btn" disabled><i
+                          class="fa-solid fa-minus"></i></button>
+                      <span class="passenger-counter-value">0</span>
+                      <button type="button" class="passenger-counter-btn"><i class="fa-solid fa-plus"></i></button>
+                    </div>
+                  </div>
+
+                  <h6 class="passenger-panel-title">Travel Class</h6>
+                  <div class="passenger-classes">
+                    <div class="passenger-class">
+                      <label class="class-option-card">
+                        <input type="radio" name="travelClass" value="Economy" checked>
+                        <div class="card-box">Economy</div>
+                      </label>
+                    </div>
+                    <div class="passenger-class">
+                      <label class="class-option-card">
+                        <input type="radio" name="travelClass" value="PremiumEconomy">
+                        <div class="card-box">Premium Economy</div>
+                      </label>
+                    </div>
+                    <div class="passenger-class">
+                      <label class="class-option-card">
+                        <input type="radio" name="travelClass" value="Business">
+                        <div class="card-box">Business</div>
+                      </label>
+                    </div>
+                    <div class="passenger-class">
+                      <label class="class-option-card">
+                        <input type="radio" name="travelClass" value="First">
+                        <div class="card-box">First</div>
+                      </label>
+                    </div>
+                  </div>
+
+                  <button type="button" class="comn-btn animated-btn yellow-fill-btn w-100 text-center">
+                    Apply
+                    <span class="animatn"></span>
+                  </button>
+                </div>
+              </div>
+
+              <button class="comn-btn animated-btn yellow-fill-btn" id="searchBtn">
+                <i class="fa-solid fa-plane"></i>
+                SEARCH FLIGHT
+                <span class="animatn"></span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Navigation / Search Details End -->
+
+  <!-- Flight Sorting & Filter Section Start -->
+  <div class="flight-filter-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 col-xxl-5">
+          <div class="flight-route-title">
+            <p class="route-title">Top Pick: <span class="route-name">Delhi <i class="fa-solid fa-arrow-right-long"></i>
+                Mumbai</span> </p>
+            <p class="route-wishes">Start your Mumbai story the best way.</p>
+          </div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-12 col-lg-8 col-xl-8 col-xxl-7">
+          <div class="quick-sorting">
+            <div class="sorting-title">
+              <p>Sort by:</p>
+            </div>
+            <div class="sorting-options">
+              <button class="selection-btn active-option">
+                <div class="txt-sec">
+                  <p>Recommended</p>
+                  <p class="amount">₹2500</p>
+                </div>
+                <div class="icon-sec">
+                  <i class="fa-solid fa-thumbs-up"></i>
+                </div>
+              </button>
+              <button class="selection-btn">
+                <div class="txt-sec">
+                  <p>Cheapest</p>
+                  <p class="amount">₹2600</p>
+                </div>
+                <div class="icon-sec">
+                  <img src="images/icon-exclude.svg" alt="">
+                </div>
+              </button>
+              <button class="selection-btn">
+                <div class="txt-sec">
+                  <p>Alternate Dates</p>
+                  <p class="amount">₹2714</p>
+                </div>
+                <div class="icon-sec">
+                  <i class="fa-regular fa-calendar"></i>
+                </div>
+              </button>
+              <button class="selection-btn">
+                <div class="txt-sec">
+                  <p>Shortest Flight</p>
+                  <p class="amount">₹3207</p>
+                </div>
+                <div class="icon-sec">
+                  <img src="images/icon-shortest-flightVector.png" alt="">
+                </div>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Filters -->
+      <div class="row">
+        <div class="col-12">
+          <div class="filters-options">
+            <button class="btn btn-filter" id="btnTriggerFilters" data-bs-toggle="modal" data-bs-target="#filterModal">
+              <span class=" rotate90"><i class="ri-sound-module-line"></i></span> All Filter
+            </button>
+            <button class="selection-btn filter-dropdown">
+              <div class="icon-sec">
+                <img src="images/icon-location.svg" alt="">
+              </div>
+              <span class="custom-dropdown">Stops <i class="fa-solid fa-arrow-down ms-3"></i></span>
+            </button>
+            <button class="selection-btn filter-dropdown">
+              <div class="icon-sec">
+                <img src="images/icon-airlines.svg" alt="">
+              </div>
+              <span class="custom-dropdown">Airlines <i class="fa-solid fa-arrow-down ms-3"></i></span>
+            </button>
+            <button class="selection-btn filter-dropdown">
+              <div class="icon-sec">
+                <img src="images/icon-departure.svg" alt="">
+              </div>
+              <span class="custom-dropdown">Departure <i class="fa-solid fa-arrow-down ms-3"></i></span>
+            </button>
+            <button class="selection-btn filter-dropdown">
+              <div class="icon-sec">
+                <img src="images/icon-duration.svg" alt="">
+              </div>
+              <span class="custom-dropdown">Duration <i class="fa-solid fa-arrow-down ms-3"></i></span>
+            </button>
+            <button class="selection-btn filter-dropdown">
+              <div class="icon-sec">
+                <img src="images/icon-arrival.svg" alt="">
+              </div>
+              <span class="custom-dropdown">Arrival <i class="fa-solid fa-arrow-down ms-3"></i></span>
+            </button>
+            <button class="selection-btn filter-dropdown">
+              <div class="icon-sec">
+                <img src="images/icon-rupee.svg" alt="">
+              </div>
+              <span class="custom-dropdown">Price <i class="fa-solid fa-arrow-down ms-3"></i></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Flight Sorting & Filter Section End -->
+
+  <!-- Flight cARDS Area Start  -->
+  <div class="flight-cards-area">
+    <div class="container">
+      <div class="row g-4">
+
+        <!-- card 1  -->
+        <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+          <div class="flight-card">
+            <div class="flight-card-header">
+              <div class="airline-details">
+                <img class="airline-logo" src="images/spice-jet.svg" alt="logo">
+                <div class="airline-info">
+                  <span class="airline-name">SpiceJet</span>
+                  <span class="flight-number">SG - 591</span>
+                </div>
+              </div>
+              <div class="flight-card-fare">
+                <div class="flight-class">Economy</div>
+                <div class="flight-price">₹12775.67</div>
+              </div>
+            </div>
+
+            <div class="flight-card-departure-date">
+              <span class="departure-date">Departure:</span> 25 Jul 2025
+            </div>
+
+            <div class="flight-card-route">
+              <div class="route-point">
+                <span class="route-time">10:05</span>
+                <span class="route-airport">DEL</span>
+              </div>
+
+              <div class="route-middle">
+                <span class="route-duration">2h 05m</span>
+                <div class="route-line"></div>
+                <span class="route-stops-badge">1Stop</span>
+              </div>
+
+              <div class="route-point">
+                <span class="route-time">16:25</span>
+                <span class="route-airport">BLR</span>
+              </div>
+            </div>
+
+            <div class="flight-card-divider"></div>
+
+            <div class="flight-card-footer">
+              <button class="comn-btn animated-btn bordered-btn details-btn" type="button">
+                Flight Details
+                <span class="animatn"></span>
+              </button>
+              <button class="comn-btn animated-btn blue-btn select-btn" type="button">
+                SELECT
+                <img src="images/right-arrow-icon.svg" alt="">
+                <span class="animatn"></span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- card 2  -->
+        <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+          <div class="flight-card">
+            <div class="flight-card-header">
+              <div class="airline-details">
+                <img class="airline-logo" src="images/air-india.svg" alt="logo">
+                <div class="airline-info">
+                  <span class="airline-name">Air India</span>
+                  <span class="flight-number">AI-860</span>
+                </div>
+              </div>
+              <div class="flight-card-fare">
+                <div class="flight-class">Economy</div>
+                <div class="flight-price">₹12775.67</div>
+              </div>
+            </div>
+
+            <div class="flight-card-departure-date">
+              <span class="departure-date">Departure:</span> 25 Jul 2025
+            </div>
+
+            <div class="flight-card-route">
+              <div class="route-point">
+                <span class="route-time">10:05</span>
+                <span class="route-airport">DEL</span>
+              </div>
+
+              <div class="route-middle">
+                <span class="route-duration">2h 05m</span>
+                <div class="route-line"></div>
+                <span class="route-stops-badge">1Stop</span>
+              </div>
+
+              <div class="route-point">
+                <span class="route-time">16:25</span>
+                <span class="route-airport">BLR</span>
+              </div>
+            </div>
+
+            <div class="flight-card-divider"></div>
+
+            <div class="flight-card-footer">
+              <button class="comn-btn animated-btn bordered-btn details-btn" type="button">
+                Flight Details
+                <span class="animatn"></span>
+              </button>
+              <button class="comn-btn animated-btn blue-btn select-btn" type="button">
+                SELECT
+                <img src="images/right-arrow-icon.svg" alt="">
+                <span class="animatn"></span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- card 2  -->
+
+        <!-- card 3  -->
+        <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+          <div class="flight-card">
+            <div class="flight-card-header">
+              <div class="airline-details">
+                <img class="airline-logo" src="images/air-india-exp.svg" alt="logo">
+                <div class="airline-info">
+                  <span class="airline-name">Air India Express</span>
+                  <span class="flight-number">IX - 175</span>
+                </div>
+              </div>
+              <div class="flight-card-fare">
+                <div class="flight-class">Economy</div>
+                <div class="flight-price">₹12775.67</div>
+              </div>
+            </div>
+
+            <div class="flight-card-departure-date">
+              <span class="departure-date">Departure:</span> 25 Jul 2025
+            </div>
+
+            <div class="flight-card-route">
+              <div class="route-point">
+                <span class="route-time">10:05</span>
+                <span class="route-airport">DEL</span>
+              </div>
+
+              <div class="route-middle">
+                <span class="route-duration">2h 05m</span>
+                <div class="route-line"></div>
+                <span class="route-stops-badge">1Stop</span>
+              </div>
+
+              <div class="route-point">
+                <span class="route-time">16:25</span>
+                <span class="route-airport">BLR</span>
+              </div>
+            </div>
+
+            <div class="flight-card-divider"></div>
+
+            <div class="flight-card-footer">
+              <button class="comn-btn animated-btn bordered-btn details-btn" type="button">
+                Flight Details
+                <span class="animatn"></span>
+              </button>
+              <button class="comn-btn animated-btn blue-btn select-btn" type="button">
+                SELECT
+                <img src="images/right-arrow-icon.svg" alt="">
+                <span class="animatn"></span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- card 3  -->
+
+        <!-- card 4  -->
+        <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+          <div class="flight-card">
+            <div class="flight-card-header">
+              <div class="airline-details">
+                <img class="airline-logo" src="images/vistara.svg" alt="logo">
+                <div class="airline-info">
+                  <span class="airline-name">Vistara</span>
+                  <span class="flight-number">UK-938</span>
+                </div>
+              </div>
+              <div class="flight-card-fare">
+                <div class="flight-class">Economy</div>
+                <div class="flight-price">₹12775.67</div>
+              </div>
+            </div>
+
+            <div class="flight-card-departure-date">
+              <span class="departure-date">Departure:</span> 25 Jul 2025
+            </div>
+
+            <div class="flight-card-route">
+              <div class="route-point">
+                <span class="route-time">10:05</span>
+                <span class="route-airport">DEL</span>
+              </div>
+
+              <div class="route-middle">
+                <span class="route-duration">2h 05m</span>
+                <div class="route-line"></div>
+                <span class="route-stops-badge">1Stop</span>
+              </div>
+
+              <div class="route-point">
+                <span class="route-time">16:25</span>
+                <span class="route-airport">BLR</span>
+              </div>
+            </div>
+
+            <div class="flight-card-divider"></div>
+
+            <div class="flight-card-footer">
+              <button class="comn-btn animated-btn bordered-btn details-btn" type="button">
+                Flight Details
+                <span class="animatn"></span>
+              </button>
+              <button class="comn-btn animated-btn blue-btn select-btn" type="button">
+                SELECT
+                <img src="images/right-arrow-icon.svg" alt="">
+                <span class="animatn"></span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- card 4  -->
+
+
+        <!-- card 5  -->
+        <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+          <div class="flight-card">
+            <div class="flight-card-header">
+              <div class="airline-details">
+                <img class="airline-logo" src="images/indigo.svg" alt="logo">
+                <div class="airline-info">
+                  <span class="airline-name">IndiGo</span>
+                  <span class="flight-number">6E - 2533</span>
+                </div>
+              </div>
+              <div class="flight-card-fare">
+                <div class="flight-class">Economy</div>
+                <div class="flight-price">₹12775.67</div>
+              </div>
+            </div>
+
+            <div class="flight-card-departure-date">
+              <span class="departure-date">Departure:</span> 25 Jul 2025
+            </div>
+
+            <div class="flight-card-route">
+              <div class="route-point">
+                <span class="route-time">10:05</span>
+                <span class="route-airport">DEL</span>
+              </div>
+
+              <div class="route-middle">
+                <span class="route-duration">2h 05m</span>
+                <div class="route-line"></div>
+                <span class="route-stops-badge">1Stop</span>
+              </div>
+
+              <div class="route-point">
+                <span class="route-time">16:25</span>
+                <span class="route-airport">BLR</span>
+              </div>
+            </div>
+
+            <div class="flight-card-divider"></div>
+
+            <div class="flight-card-footer">
+              <button class="comn-btn animated-btn bordered-btn details-btn" type="button">
+                Flight Details
+                <span class="animatn"></span>
+              </button>
+              <button class="comn-btn animated-btn blue-btn select-btn" type="button">
+                SELECT
+                <img src="images/right-arrow-icon.svg" alt="">
+                <span class="animatn"></span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- card 5  -->
+
+        <!-- card 6  -->
+        <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+          <div class="flight-card">
+            <div class="flight-card-header">
+              <div class="airline-details">
+                <img class="airline-logo" src="images/akasaair.png" alt="logo">
+                <div class="airline-info">
+                  <span class="airline-name">Akasa Air</span>
+                  <span class="flight-number">QP-3313</span>
+                </div>
+              </div>
+              <div class="flight-card-fare">
+                <div class="flight-class">Economy</div>
+                <div class="flight-price">₹12775.67</div>
+              </div>
+            </div>
+
+            <div class="flight-card-departure-date">
+              <span class="departure-date">Departure:</span> 25 Jul 2025
+            </div>
+
+            <div class="flight-card-route">
+              <div class="route-point">
+                <span class="route-time">10:05</span>
+                <span class="route-airport">DEL</span>
+              </div>
+
+              <div class="route-middle">
+                <span class="route-duration">2h 05m</span>
+                <div class="route-line"></div>
+                <span class="route-stops-badge">1Stop</span>
+              </div>
+
+              <div class="route-point">
+                <span class="route-time">16:25</span>
+                <span class="route-airport">BLR</span>
+              </div>
+            </div>
+
+            <div class="flight-card-divider"></div>
+
+            <div class="flight-card-footer">
+              <button class="comn-btn animated-btn bordered-btn details-btn" type="button">
+                Flight Details
+                <span class="animatn"></span>
+              </button>
+              <button class="comn-btn animated-btn blue-btn select-btn" type="button">
+                SELECT
+                <img src="images/right-arrow-icon.svg" alt="">
+                <span class="animatn"></span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- card 6  -->
+
+        <!-- card 7  -->
+        <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+          <div class="flight-card">
+            <div class="flight-card-header">
+              <div class="airline-details">
+                <img class="airline-logo" src="images/spice-jet.svg" alt="logo">
+                <div class="airline-info">
+                  <span class="airline-name">SpiceJet</span>
+                  <span class="flight-number">SG - 591</span>
+                </div>
+              </div>
+              <div class="flight-card-fare">
+                <div class="flight-class">Economy</div>
+                <div class="flight-price">₹12775.67</div>
+              </div>
+            </div>
+
+            <div class="flight-card-departure-date">
+              <span class="departure-date">Departure:</span> 25 Jul 2025
+            </div>
+
+            <div class="flight-card-route">
+              <div class="route-point">
+                <span class="route-time">10:05</span>
+                <span class="route-airport">DEL</span>
+              </div>
+
+              <div class="route-middle">
+                <span class="route-duration">2h 05m</span>
+                <div class="route-line"></div>
+                <span class="route-stops-badge">1Stop</span>
+              </div>
+
+              <div class="route-point">
+                <span class="route-time">16:25</span>
+                <span class="route-airport">BLR</span>
+              </div>
+            </div>
+
+            <div class="flight-card-divider"></div>
+
+            <div class="flight-card-footer">
+              <button class="comn-btn animated-btn bordered-btn details-btn" type="button">
+                Flight Details
+                <span class="animatn"></span>
+              </button>
+              <button class="comn-btn animated-btn blue-btn select-btn" type="button">
+                SELECT
+                <img src="images/right-arrow-icon.svg" alt="">
+                <span class="animatn"></span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- card 7  -->
+
+        <!-- card 8  -->
+        <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+          <div class="flight-card">
+            <div class="flight-card-header">
+              <div class="airline-details">
+                <img class="airline-logo" src="images/air-india.svg" alt="logo">
+                <div class="airline-info">
+                  <span class="airline-name">Air India</span>
+                  <span class="flight-number">AI-860</span>
+                </div>
+              </div>
+              <div class="flight-card-fare">
+                <div class="flight-class">Economy</div>
+                <div class="flight-price">₹12775.67</div>
+              </div>
+            </div>
+
+            <div class="flight-card-departure-date">
+              <span class="departure-date">Departure:</span> 25 Jul 2025
+            </div>
+
+            <div class="flight-card-route">
+              <div class="route-point">
+                <span class="route-time">10:05</span>
+                <span class="route-airport">DEL</span>
+              </div>
+
+              <div class="route-middle">
+                <span class="route-duration">2h 05m</span>
+                <div class="route-line"></div>
+                <span class="route-stops-badge">1Stop</span>
+              </div>
+
+              <div class="route-point">
+                <span class="route-time">16:25</span>
+                <span class="route-airport">BLR</span>
+              </div>
+            </div>
+
+            <div class="flight-card-divider"></div>
+
+            <div class="flight-card-footer">
+              <button class="comn-btn animated-btn bordered-btn details-btn" type="button">
+                Flight Details
+                <span class="animatn"></span>
+              </button>
+              <button class="comn-btn animated-btn blue-btn select-btn" type="button">
+                SELECT
+                <img src="images/right-arrow-icon.svg" alt="">
+                <span class="animatn"></span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- card 8  -->
+
+        <!-- card 9  -->
+        <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+          <div class="flight-card">
+            <div class="flight-card-header">
+              <div class="airline-details">
+                <img class="airline-logo" src="images/air-india-exp.svg" alt="logo">
+                <div class="airline-info">
+                  <span class="airline-name">Air India Express</span>
+                  <span class="flight-number">IX-720</span>
+                </div>
+              </div>
+              <div class="flight-card-fare">
+                <div class="flight-class">Economy</div>
+                <div class="flight-price">₹12775.67</div>
+              </div>
+            </div>
+
+            <div class="flight-card-departure-date">
+              <span class="departure-date">Departure:</span> 25 Jul 2025
+            </div>
+
+            <div class="flight-card-route">
+              <div class="route-point">
+                <span class="route-time">10:05</span>
+                <span class="route-airport">DEL</span>
+              </div>
+
+              <div class="route-middle">
+                <span class="route-duration">2h 05m</span>
+                <div class="route-line"></div>
+                <span class="route-stops-badge">1Stop</span>
+              </div>
+
+              <div class="route-point">
+                <span class="route-time">16:25</span>
+                <span class="route-airport">BLR</span>
+              </div>
+            </div>
+
+            <div class="flight-card-divider"></div>
+
+            <div class="flight-card-footer">
+              <button class="comn-btn animated-btn bordered-btn details-btn" type="button" data-bs-toggle="modal"
+                data-bs-target="#flightDetailsModal">
+                Flight Details
+                <span class="animatn"></span>
+              </button>
+              <button class="comn-btn animated-btn blue-btn select-btn" type="button" data-bs-toggle="modal"
+                data-bs-target="#fareSelectionModal">
+                SELECT
+                <img src="images/right-arrow-icon.svg" alt="">
+                <span class="animatn"></span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- card 9  -->
+      </div>
+    </div>
+  </div>
+  <!-- Flight cARDS Area End  -->
+
+  <!-- Fare Select Modal -->
+  <div class="modal fade custom-fare-modal" id="fareSelectionModal" tabindex="-1"
+    aria-labelledby="fareSelectionModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div>
+            <h5 class="modal-title" id="fareSelectionModalLabel">Select your fare</h5>
+            <p class="modal-sub-title">Delhi to Mumbai | 25 Jul 2025</p>
+          </div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+
+          <div class="row g-4">
+            <!-- Standard Fare Card (Radio Option 1) -->
+            <div class=" col-sm-12 col-md-6">
+              <label class="fare-card-option d-block h-100">
+                <input type="radio" name="fareType" value="Standard" class="fare-radio-input" checked>
+
+                <div class="card fare-card">
+                  <!-- Header Box -->
+                  <div class="fare-header-box">
+                    <div class="custom-radio-circle me-3"></div>
+                    <div class="txt-sec">
+                      <span class="plan-name">Standard</span>
+                      <h4 class="plan-fare">₹4,999 <span class="small-txt">per adult</span></h4>
+                    </div>
+                  </div>
+
+                  <!-- Flexibility -->
+                  <h6 class="title-txt">Flexibility</h6>
+                  <ul class="list-unstyled fare-feature-list">
+                    <li class="disabled"><i class="icon-cross me-2"></i> Cancel flights with lower fees (Airline
+                      policies applicable)</li>
+                    <li class="disabled"><i class="icon-cross me-2"></i> Save on change/cancel charges (airline rules
+                      apply).</li>
+                    <li class="disabled"><i class="icon-cross me-2"></i> Hassle-free upgrades (per airline policy).</li>
+                  </ul>
+
+                  <!-- Seats, Meals -->
+                  <h6 class="title-txt">Seats, Meals</h6>
+                  <ul class="list-unstyled fare-feature-list">
+                    <li class="disabled"><i class="icon-cross me-2"></i> Chargeable Seats</li>
+                    <li class="disabled"><i class="icon-cross me-2"></i> Chargeable Meals</li>
+                  </ul>
+
+                  <!-- Baggage -->
+                  <h6 class="title-txt">Baggage</h6>
+                  <ul class="list-unstyled fare-feature-list">
+                    <li class="enabled"><i class="icon-check me-2"></i> 7 Kgs Cabin Baggage</li>
+                    <li class="enabled"><i class="icon-check me-2"></i> 15 Kgs Check-in Baggage</li>
+                  </ul>
+                </div>
+              </label>
+            </div>
+            <!-- FlexiFly Fare Card (Radio Option 2) -->
+            <div class="col-sm-12 col-md-6">
+              <label class="fare-card-option d-block h-100 position-relative">
+                <input type="radio" name="fareType" value="FlexiFly" class="fare-radio-input">
+
+                <div class="card fare-card h-100">
+                  <!-- Header Box -->
+                  <div class="fare-header-box">
+                    <div class="custom-radio-circle me-3"></div>
+                    <div class="txt-sec">
+                      <span class="plan-name">FlexiFly</span>
+                      <h4 class="plan-fare">₹5,419 <span class="small-txt">per adult</span></h4>
+                    </div>
+                  </div>
+
+                  <!-- Flexibility -->
+                  <h6 class="title-txt">Flexibility</h6>
+                  <ul class="list-unstyled fare-feature-list">
+                    <li><i class="icon-check me-2"></i> Cancel flights with lower fees (Airline policies applicable)
+                    </li>
+                    <li><i class="icon-check me-2"></i> Save on change/cancel charges (airline rules apply).</li>
+                    <li><i class="icon-check me-2"></i> Hassle-free upgrades (per airline policy).</li>
+                  </ul>
+
+                  <!-- Seats, Meals -->
+                  <h6 class="title-txt">Seats, Meals</h6>
+                  <ul class="list-unstyled fare-feature-list">
+                    <li><i class="icon-check me-2"></i> Chargeable Seats</li>
+                    <li><i class="icon-cross me-2"></i> Chargeable Meals</li>
+                  </ul>
+
+                  <!-- Baggage -->
+                  <h6 class="title-txt">Baggage</h6>
+                  <ul class="list-unstyled fare-feature-list mb-0">
+                    <li><i class="icon-check me-2"></i> 7 Kgs Cabin Baggage</li>
+                    <li><i class="icon-check me-2"></i> 15 Kgs Check-in Baggage</li>
+                  </ul>
+                </div>
+              </label>
+            </div>
+          </div>
+
+          <div class="modal-buttons-sec">
+            <p><i class="icon-check me-2"></i> You Selected Economy Standard</p>
+            <button class="comn-btn animated-btn blue-btn" data-bs-dismiss="modal" aria-label="Close">
+              Confirm & Continue
+              <img src="images/right-arrow-icon.svg" alt="">
+              <span class="animatn"></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Flight Details Modal -->
+  <div class="modal fade custom-flight-details-modal" id="flightDetailsModal" tabindex="-1"
+    aria-labelledby="flightDetailsModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h5 class="modal-title" id="flightDetailsModalLabel">Flight Details</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <!-- Modal Body -->
+        <div class="modal-body">
+
+          <!-- Flight Route & Duration Summary -->
+          <h4 class="flight-route-title">BOM → DEL</h4>
+          <p class="flight-summary-info">1 stop • 4h 10m</p>
+
+          <!-- Timeline -->
+          <div class="flight-timeline-container">
+
+
+            <!-- Flight - 1 Segment Start  -->
+            <div class="flight-segment">
+              <!-- Stop 1: Departure -->
+              <div class="flight-timeline-item">
+                <div class="timeline-icon-circle">
+                  <img src="images/icon-departure.svg" alt="">
+                </div>
+                <div class="flight-time-date">Thu, 31 Jul • 08:00</div>
+                <div class="flight-station-name">Mumbai - Chhatrapati Shivaji Airport</div>
+              </div>
+
+              <!-- Flight Info 1 -->
+              <div class="flight-segment-details">
+                <div class="flight-operator-icon">
+                  <img src="images/indigo.svg" alt="">
+                </div>
+                <div class="flight-operator-detail">
+                  <span class="carrier-name">IndiGo • AI-860 • 1h 5m</span>
+                  <p class="operator-info">Operated by : InterGlobe Aviation Limited</p>
+                </div>
+              </div>
+
+              <!-- Stop 2: Layover Station Arrival -->
+              <div class="flight-timeline-item">
+                <div class="timeline-icon-circle">
+                  <img src="images/icon-arrival.svg" alt="">
+                </div>
+                <div class="flight-time-date">Thu, 31 Jul • 09:05</div>
+                <div class="flight-station-name">Ahmedabad - Sardar Vallabhbhai Patel Intl</div>
+              </div>
+            </div>
+            <!-- Flight - 1 Segment End  -->
+
+            <!-- Layover Duration Capsule -->
+            <div class="layover-capsule-sec">
+              <div class="layover-capsule">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  class="me-2">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 6 12 12 16 14"></polyline>
+                </svg>
+                Layover : 1h 20m (AMD - Ahmedabad)
+              </div>
+            </div>
+
+            <!-- Flight - 2 Segment Start  -->
+            <div class="flight-segment">
+              <!-- Stop 3: Layover Station Departure -->
+              <div class="flight-timeline-item">
+                <div class="timeline-icon-circle">
+                  <img src="images/icon-departure.svg" alt="">
+                </div>
+                <div class="flight-time-date">Thu, 31 Jul • 10:25</div>
+                <div class="flight-station-name">Ahmedabad - Sardar Vallabhbhai Patel Intl</div>
+              </div>
+
+              <!-- Flight Info 2 -->
+              <div class="flight-segment-details">
+                <div class="flight-operator-icon">
+                  <img src="images/indigo.svg" alt="">
+                </div>
+                <div class="flight-operator-detail">
+                  <span class="carrier-name">IndiGo • AI-860 • 1h 5m</span>
+                  <p class="operator-info">Operated by : InterGlobe Aviation Limited</p>
+                </div>
+              </div>
+
+              <!-- Stop 4: Final Arrival -->
+              <div class="flight-timeline-item">
+                <div class="timeline-icon-circle">
+                  <img src="images/icon-arrival.svg" alt="">
+                </div>
+                <div class="flight-time-date">Thu, 31 Jul • 12:10</div>
+                <div class="flight-station-name">Delhi - Indira Gandhi International Airport</div>
+              </div>
+            </div>
+            <!-- Flight - 2 Segment End  -->
+
+          </div>
+
+          <!-- Baggage Allowance Strip -->
+          <div class="baggage-info-strip d-flex align-items-center">
+            <!-- Cabin Baggage -->
+            <div class="d-flex align-items-center me-4">
+              <div class="baggage-icon-box">
+                <i class="fa-solid fa-suitcase"></i>
+              </div>
+              <div>
+                <div class="baggage-title">Cabin Baggage:</div>
+                <div class="baggage-desc">7Kgs / Adult</div>
+              </div>
+            </div>
+
+            <!-- Check-in Baggage -->
+            <div class="d-flex align-items-center">
+              <div class="baggage-icon-box">
+                <i class="fa-solid fa-suitcase-rolling"></i>
+              </div>
+              <div>
+                <div class="baggage-title">Check-in Baggage:</div>
+                <div class="baggage-desc">15Kgs / Adult</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Footer Section -->
+          <div class="modal-footer-sec">
+            <div>
+              <span class="class-label">Economy</span>
+              <h3 class="total-price">₹12775.67</h3>
+            </div>
+            <button class="comn-btn animated-btn blue-btn" data-bs-dismiss="modal" aria-label="Close">
+              Select
+              <img src="images/right-arrow-icon.svg" alt="">
+              <span class="animatn"></span>
+            </button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Filter Modal -->
+  <div class="modal fade custom-filter-modal" id="filterModal" tabindex="-1" aria-labelledby="filterModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <h5 class="modal-title" id="filterModalLabel">Filter</h5>
+          <button type="button" class="btn-close-yellow" data-bs-dismiss="modal" aria-label="Close">✕</button>
+        </div>
+
+        <div class="modal-body">
+
+          <!-- Section 1: Stops -->
+          <div class="filter-section">
+            <h6 class="filter-section-title">Stops</h6>
+            <div class="form-check d-flex justify-content-between align-items-center mb-2">
+              <div>
+                <input class="form-check-input" type="checkbox" id="stopNonStop">
+                <label class="form-check-label ms-1" for="stopNonStop">Non Stop</label>
+              </div>
+              <span class="price-tag">₹1,466.81</span>
+            </div>
+            <div class="form-check d-flex justify-content-between align-items-center mb-2">
+              <div>
+                <input class="form-check-input" type="checkbox" id="stop1">
+                <label class="form-check-label ms-1" for="stop1">1 Stop</label>
+              </div>
+              <span class="price-tag">₹847.07</span>
+            </div>
+            <div class="form-check d-flex justify-content-between align-items-center mb-2">
+              <div>
+                <input class="form-check-input" type="checkbox" id="stop2">
+                <label class="form-check-label ms-1" for="stop2">2 Stop</label>
+              </div>
+              <span class="price-tag">₹1,133.87</span>
+            </div>
+          </div>
+
+          <hr class="filter-divider">
+
+          <!-- Section 2: Price Range -->
+          <div class="filter-section">
+            <h6 class="filter-section-title">Price Range</h6>
+            <div class="range-slider-wrapper my-3">
+              <input type="range" class="form-range custom-price-range" min="2000" max="5000" value="0">
+            </div>
+            <div class="price-range-label">₹2,000 - ₹5,000</div>
+          </div>
+
+          <hr class="filter-divider">
+
+          <!-- Section 3: Departure Time -->
+          <div class="filter-section">
+            <h6 class="filter-section-title">Departure Time</h6>
+            <div class="row g-2">
+              <div class="col-6">
+                <label class="time-filter-card">
+                  <input type="checkbox" name="departureTime" class="time-card-input">
+                  <div class="card-box">
+                    <img class="time-icon" src="images/icon-morning.svg" alt="">
+                    <div>
+                      <span class="title">Early Morning</span>
+                      <span class="desc">Before 6AM</span>
+                    </div>
+                  </div>
+                </label>
+              </div>
+              <div class="col-6">
+                <label class="time-filter-card">
+                  <input type="checkbox" name="departureTime" class="time-card-input">
+                  <div class="card-box">
+                    <img class="time-icon" src="images/icon-morning-2.svg" alt="">
+                    <div>
+                      <span class="title">Morning</span>
+                      <span class="desc">06AM - 12PM</span>
+                    </div>
+                  </div>
+                </label>
+              </div>
+              <div class="col-6">
+                <label class="time-filter-card">
+                  <input type="checkbox" name="departureTime" class="time-card-input">
+                  <div class="card-box">
+                    <img class="time-icon" src="images/icon-mid-day.svg" alt="">
+                    <div>
+                      <span class="title">Mid Day</span>
+                      <span class="desc">12PM - 06PM</span>
+                    </div>
+                  </div>
+                </label>
+              </div>
+              <div class="col-6">
+                <label class="time-filter-card">
+                  <input type="checkbox" name="departureTime" class="time-card-input">
+                  <div class="card-box">
+                    <img class="time-icon" src="images/icon-night.svg" alt="">
+                    <div>
+                      <span class="title">Night</span>
+                      <span class="desc">06PM - 12AM</span>
+                    </div>
+                  </div>
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <hr class="filter-divider">
+
+          <!-- Section 4: Return Time -->
+          <div class="filter-section">
+            <h6 class="filter-section-title">Return Time</h6>
+            <div class="row g-2">
+              <div class="col-6">
+                <label class="time-filter-card">
+                  <input type="checkbox" name="returnTime" class="time-card-input">
+                  <div class="card-box">
+                    <img class="time-icon" src="images/icon-morning.svg" alt="">
+                    <div>
+                      <span class="title">Early Morning</span>
+                      <span class="desc">Before 6AM</span>
+                    </div>
+                  </div>
+                </label>
+              </div>
+              <div class="col-6">
+                <label class="time-filter-card">
+                  <input type="checkbox" name="returnTime" class="time-card-input">
+                  <div class="card-box">
+                    <img class="time-icon" src="images/icon-morning-2.svg" alt="">
+                    <div>
+                      <span class="title">Morning</span>
+                      <span class="desc">06AM - 12PM</span>
+                    </div>
+                  </div>
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <hr class="filter-divider">
+
+          <!-- Section 5: Airlines -->
+          <div class="filter-section">
+            <h6 class="filter-section-title">Airlines</h6>
+            <div class="form-check d-flex justify-content-between align-items-center mb-2">
+              <div>
+                <input class="form-check-input" type="checkbox" id="airlineIndiGo">
+                <label class="form-check-label ms-1" for="airlineIndiGo">IndiGo</label>
+              </div>
+              <span class="price-tag">₹1,466.81</span>
+            </div>
+            <div class="form-check d-flex justify-content-between align-items-center mb-2">
+              <div>
+                <input class="form-check-input" type="checkbox" id="airlineAirIndia">
+                <label class="form-check-label ms-1" for="airlineAirIndia">Air India</label>
+              </div>
+              <span class="price-tag">₹1,466.81</span>
+            </div>
+            <div class="form-check d-flex justify-content-between align-items-center mb-2">
+              <div>
+                <input class="form-check-input" type="checkbox" id="airlineVistara">
+                <label class="form-check-label ms-1" for="airlineVistara">Vistara</label>
+              </div>
+              <span class="price-tag">₹1,466.81</span>
+            </div>
+            <div class="form-check d-flex justify-content-between align-items-center mb-2">
+              <div>
+                <input class="form-check-input" type="checkbox" id="airlineSpiceJet">
+                <label class="form-check-label ms-1" for="airlineSpiceJet">SpiceJet</label>
+              </div>
+              <span class="price-tag">₹1,466.81</span>
+            </div>
+            <div class="form-check d-flex justify-content-between align-items-center mb-2">
+              <div>
+                <input class="form-check-input" type="checkbox" id="airlineAkasaAir">
+                <label class="form-check-label ms-1" for="airlineAkasaAir">Akasa Air</label>
+              </div>
+              <span class="price-tag">₹1,466.81</span>
+            </div>
+          </div>
+
+          <hr class="filter-divider">
+
+          <!-- Section 6: Fare Type -->
+          <div class="filter-section">
+            <h6 class="filter-section-title">Fare Type</h6>
+            <div class="form-check d-flex justify-content-between align-items-center mb-2">
+              <div>
+                <input class="form-check-input" type="checkbox" id="fareRefundable">
+                <label class="form-check-label ms-1" for="fareRefundable">Refundable Only</label>
+              </div>
+              <span class="price-tag">₹1,466.81</span>
+            </div>
+            <div class="form-check d-flex justify-content-between align-items-center mb-2">
+              <div>
+                <input class="form-check-input" type="checkbox" id="fareFreeBaggage">
+                <label class="form-check-label ms-1" for="fareFreeBaggage">Free Baggage</label>
+              </div>
+              <span class="price-tag">₹1,466.81</span>
+            </div>
+            <div class="form-check d-flex justify-content-between align-items-center mb-2">
+              <div>
+                <input class="form-check-input" type="checkbox" id="fareFlexibleDates">
+                <label class="form-check-label ms-1" for="fareFlexibleDates">Flexible Dates</label>
+              </div>
+              <span class="price-tag">₹1,466.81</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Fixed Footer -->
+        <div class="modal-footer">
+          <a href="#" class="reset-link" onclick="return false;">Reset</a>
+          <button class="comn-btn animated-btn blue-btn select-btn" type="button" data-bs-toggle="modal"
+            data-bs-target="#fareSelectionModal">
+            APPLY
+            <img src="images/right-arrow-icon.svg" alt="">
+            <span class="animatn"></span>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <script src="js/jquery-3.7.1.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/jquery.easy-ticker.min.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script src="js/owl.carousel.js"></script>
+  <script src="js/custom.js"></script>
+
+
+</body>
+
+</html>
