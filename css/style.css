@@ -907,7 +907,12 @@ ul {
     display: flex;
     align-items: center;
 }
-
+.filters-options .selection-btn .custom-dropdown i {
+    font-size: 12px;
+}
+.filters-options .selection-btn .custom-dropdown i {
+    font-size: 12px;
+}
 .filters-options .btn-filter {
     color: #026EFA;
 }
